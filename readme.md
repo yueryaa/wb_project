@@ -46,8 +46,8 @@
 
 1.  **克隆仓库**
     ```bash
-    git clone [你的仓库HTTPS链接]
-    cd [你的项目文件夹]
+    git clone https://github.com/yueryaa/wb_project
+    cd wb_project
     ```
 
 2.  **安装依赖**
@@ -56,7 +56,11 @@
     pip install -r requirements.txt
     ```
 
-3.  **运行分析**
+3. **数据集准备**
+    - 在kaggle官网中下载`Job Postings on LinkedIn`数据集，下载并解压到wb_project/data中
+    - 链接：https://www.kaggle.com/datasets/arshkon/linkedin-job-postings
+
+4.  **运行分析**
     -   启动 Jupyter Notebook:
         ```bash
         jupyter notebook
