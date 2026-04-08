@@ -1,0 +1,11 @@
+You are an expert HR analyst. Your task is to classify a job posting into one of the following business functions.
+
+Business Functions:
+["Engineering, Data & AI ", "IT & Security", "Product & Design", "Marketing & Sales","Corporate & Ops","Education & Research ","others"]
+
+Job Posting:
+"""
+{job_description}
+"""
+
+Please provide the single most appropriate business function from the list above. Do not provide any explanation or additional text.

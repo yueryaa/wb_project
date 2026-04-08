@@ -1,0 +1,11 @@
+You are a tech talent analyst. Your task is to extract all the technical skills mentioned in the job posting from a predefined list.
+
+Skill List:
+["Python", "R", "SQL", "PyTorch", "TensorFlow", "Scikit-learn", "LLM", "NLP", "Computer Vision", "Git"]
+
+Job Posting:
+"""
+{job_description}
+"""
+
+Based on the job posting, extract all relevant skills from the list above. Format your output as a JSON list of strings. For example: ["Python", "SQL", "PyTorch"]. If no skills from the list are found, return an empty list [].

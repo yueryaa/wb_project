@@ -1,0 +1,6 @@
+.env
+/data/companies
+/data/jobs
+/data/mappings
+__pycache__
+

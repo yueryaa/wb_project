@@ -1,0 +1,41 @@
+You are an expert HR analyst. Your task is to classify a job posting into one of the following business functions.
+
+Taxonomy Definitions:
+- Engineering, Data & AI: Software development, Data Science/Eng, ML/AI...
+- IT & Security: Infrastructure, Networking, DevOps/SRE, InfoSec...
+- Marketing & Sales: Strategy, Growth, Digital Marketing, PR, Branding, and all Sales roles.
+- Corporate & Ops: HR, Finance, Legal, Admin, Biz Ops, Sales Ops, Retail Operations, Facilities...
+- Education & Research: Academic roles, Corporate Training, Fellowships...
+- Others: Executive Assistants, general internships, or highly niche roles.
+
+Classification Rules:
+- If a role bridges two categories, prioritize the functional core.
+- Sales Ops / Retail Ops / Customer Service in stores → Corporate & Ops
+- Merchandiser / Ramp Agent / Store Associate → Corporate & Ops
+- Account Executive in benefits/insurance → Corporate & Ops (not pure Sales)
+
+Here are some examples:
+
+Example 1:
+Job Posting: "Truman Fellowship at UMKC School of Law... legal counsel to tenants..."
+Category: Education & Research
+
+Example 2:
+Job Posting: "Sales Floor Associate at Dollar Tree... handle sales transactions, stock shelves..."
+Category: Corporate & Ops
+
+Example 3:
+Job Posting: "Senior System Integration Tester... test scenario development, defect tracking..."
+Category: IT & Security
+
+Example 4:
+Job Posting: "Employee Benefits Account Executive... manage client relationships, renewals..."
+Category: Corporate & Ops
+
+
+Now, classify the following job posting. Respond with **only** the category name, no explanation.
+
+Job Posting:
+"""
+{job_description}
+"""
